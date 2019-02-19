@@ -26,6 +26,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
+          'css-hot-loader',
           {
             loader: 'css-loader',
             options: {
@@ -41,7 +42,8 @@ module.exports = {
         test: /\.svg$/,
         exclude: /node_modules/,
         loader: 'svg-react-loader'
-      }
+      },
+      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
     ]
   },
   plugins: [

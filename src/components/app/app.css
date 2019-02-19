@@ -1,16 +1,19 @@
-:global {
   html,
   body {
     margin: 0;
+    padding: 0;
   }
 
   * {
     box-sizing: border-box;
   }
-}
+
 
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
+  background-image: url(../autocomplete/clouds.jpg);
 }
+
